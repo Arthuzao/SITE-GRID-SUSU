@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "cairo", sans-serif;
+}
+
+#header {
+    height: 40px;
+    background-color: lightgray;
+    display: flex;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1fr 1fr 1.3fr 1.3fr;
+    grid-template-rows: 80px 80px 431px 263px;
+}
+
+#main>div {
+    border: solid 1px;
+}
+
+#logo {
+    grid-column: 2;
+}
+
+#menu {
+    grid-column: 2;
+    grid-row: 2/4;
+    background-color: greenyellow;
+    position: relative;
+    height: 50px;
+
+}
+
+#busca {
+    grid-column: 3/6;
+    grid-row: 2;
+
+}
+
+#banner {
+    grid-column: 3/6;
+    grid-row: 3;
+    background-image: url(banner.jpg);
+}
+
+#prod {
+    grid-row: 4;
+    grid-column: 2;
+    background-image: url(cat-1.jpg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#prod1 {
+    grid-column: 3;
+    grid-row: 4;
+    background-image: url(cat-2.jpg.webp);
+}
+
+#prod2 {
+    grid-row: 4;
+    grid-column: 4;
+    background-image: url(cat-3.jpg.webp);
+}
+
+#prod3 {
+    grid-row: 4;
+    grid-column: 5;
+    background-image: url(cat-4.jpg.webp);
+
+}
+
+
+#nav {
+    display: flex;
+    grid-column: 3/6;
+}
+
+#nav>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-grow: 3;
+}
+
+#check {
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+#drop-menu {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    opacity: 0;
+    border: solid;
+    height: 465px;
+    list-style: none;
+}
+
+#check:checked~#drop-menu {
+    opacity: 1;
+}
+
+#busca input {
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 40vh;
+    height: 30px;
+}
+
+#btn {
+    background-color: greenyellow;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: #7fad39;
+    border: none;
+}
+
+#ZZ {
+    margin-top: 220PX;
+    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 150px;
+    height: 40PX;
+}
+
+#aa {
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100%;
+
+    
+}
+
+.vv {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+#V {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    gap: 20px;
+}
+
+#dois {
+
+    grid-column-start: 2;
+    display: flex;
+    flex-flow:column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.vv::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #7fad39;
+    position: relative;
+    top: 2rem;
+    right: 7rem;
+ 
+}
+#tz{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    margin: auto;
+    width: 60%; 
+
+}
+#za{display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#o{
+    grid-column: 2/4;
+}
+#b{
+    grid-column: 4/6;
+}
+#xs{
+display: flex;
+justify-content: center;
+gap: 30px;
+
+}
+#gg{ display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    margin: auto;
+    width: 60%; 
+}
+#doiis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#doiis::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #7fad39;
+    position: relative;
+    top: 1rem;
+    right: 6rem;
+}
+  #pc{  grid-template-columns:  1fr 1fr 1fr ;
+    grid-auto-rows: 1fr 1fr 1fr;
+    display: grid;
+    margin-top: 1vh;
+  }
+.xs{width: 20px;}
+#h{
+    
+        height: 250px;
+        background-color: lightgray;
+        display: flex;
+        width: 100%;
+        display: grid;
+        position: relative;
+        grid-template-columns:  300px 300px 300px 500px  ;
+}
+#hgd{
+display: flex;
+
+
+
+}
+#teste{
+    position: absolute;
+    display: flex;
+    width: 500px;
+ left: 900px;
+top:150px;
+}
